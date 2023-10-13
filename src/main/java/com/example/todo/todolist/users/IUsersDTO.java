@@ -1,9 +1,9 @@
 package com.example.todo.todolist.users;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.UUID;
 
-public interface IUsersDTO extends JpaRepository<User, UUID> {
-   User findByUserName(String username);
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IUsersDTO extends JpaRepository<UserModel, UUID> {
+   UserModel findByUsername(String username);
 }
